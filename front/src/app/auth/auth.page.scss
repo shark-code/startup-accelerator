@@ -1,0 +1,68 @@
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  .logo--text {
+    font-size: 50px;    
+    font-family: 'Rubik Glitch', cursive;
+    @media (max-width:550px) {
+      font-size: 30px;
+    }
+  }
+  .linkedin-icon {
+    font-size: 44px;
+  }
+}
+
+.subtitle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px 16px;
+  font-size: 30px;
+  text-align: center;
+  @media (max-width:550px) {
+    font-size: 20px;
+  }
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  ion-card {
+    box-shadow: none;
+    border: 1px solid #e1e1e1;
+    padding: 24px;
+    .terms-and-conditions {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 16px;
+      ion-text {
+        font-weight: 500;
+      }
+    }
+    ion-button {
+      margin-top: 16px;
+      height: 48px;
+      font-size: large;
+    }
+  }
+}
+
+.toggle-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ion-text {
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 8px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
