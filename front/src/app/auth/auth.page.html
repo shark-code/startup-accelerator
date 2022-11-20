@@ -74,7 +74,7 @@
         >Please enter your password.</ion-text
       >
       <p *ngIf="submissionType === 'join'" class="terms-and-conditions">
-        By clicking Agree & Join, you agree to the LinkedIn
+        By clicking Agree & Join, you agree to the Our
         <ion-text color="success">User Agreement</ion-text>,
         <ion-text color="success">Privacy Policy</ion-text>, and
         <ion-text color="success">Cookie Policy</ion-text>.
@@ -92,7 +92,7 @@
     </ion-card>
   </form>
   <div class="toggle-text">
-    {{ submissionType === 'login' ? 'New to LinkedIn' : 'Already on LinkedIn' }}
+    {{ submissionType === 'login' ? 'New to Startup Accelerator' : 'Already on Startup Accelerator' }}
     <ion-text class="toggle-auth-mode" (click)="toggleText()" color="success">
       {{ submissionType === 'login' ? 'Join now' : 'Sign in' }}
     </ion-text>

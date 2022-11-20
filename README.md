@@ -36,7 +36,7 @@ Made by:
 
 Aayush Garg
 
-AditiGoyal
+Aditi Goyal
 
 Aditi Gupta
 
