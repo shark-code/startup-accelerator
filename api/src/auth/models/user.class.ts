@@ -6,6 +6,7 @@ export class User {
   id?: number;
   firstName?: string;
   lastName?: string;
+  occupation?: string;
   @IsEmail()
   email?: string;
   @IsString()

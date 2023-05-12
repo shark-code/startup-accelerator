@@ -64,6 +64,18 @@ export class AuthService {
     );
   }
 
+  get userOccupation(): Observable<string> {
+    return this.user$.asObservable().pipe(
+      switchMap((user: User) => {
+        if (!user) {
+          return of(null);
+        }
+        const occupation = user.occupation;
+        return of(occupation);
+      })
+    );
+  }
+
   get userFullImagePath(): Observable<string> {
     return this.user$.asObservable().pipe(
       switchMap((user: User) => {

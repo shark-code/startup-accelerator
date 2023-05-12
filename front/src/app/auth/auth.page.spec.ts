@@ -23,6 +23,7 @@ const mockNewUser: NewUser = {
   lastName: 'Peppinck',
   email: 'jon@hotmail.com',
   password: 'password',
+  occupation: 'Full Stack Developer',
 };
 
 const mockUser: User = {
@@ -30,6 +31,7 @@ const mockUser: User = {
   firstName: mockNewUser.firstName,
   lastName: mockNewUser.lastName,
   email: mockNewUser.email,
+  occupation: mockNewUser.occupation,
   role: 'user',
   imagePath: null,
   posts: null,

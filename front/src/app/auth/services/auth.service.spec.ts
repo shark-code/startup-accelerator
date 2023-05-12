@@ -18,6 +18,7 @@ const mockNewUser: NewUser = {
   lastName: 'Peppinck',
   email: 'jon@hotmail.com',
   password: 'password',
+  occupation: 'Full Stack Developer'
 };
 
 beforeEach(() => {
@@ -35,6 +36,7 @@ describe('AuthService', () => {
         firstName: 'Jon',
         lastName: 'Peppinck',
         email: 'jon@hotmail.com',
+        occupation: 'Full Stack Developer',
         role: 'user',
         imagePath: null,
         posts: null,
@@ -48,6 +50,7 @@ describe('AuthService', () => {
         expect(user.lastName).toEqual(mockNewUser.lastName);
         expect(user.email).toEqual(mockNewUser.email);
         expect((user as any).password).toBeUndefined();
+        expect(user.occupation).toEqual(mockNewUser.occupation);
         expect(user.role).toEqual('user');
         expect(user.imagePath).toBeNull();
         expect(user.posts).toBeNull();

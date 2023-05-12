@@ -3,4 +3,5 @@ export interface NewUser {
   lastName: string;
   email: string;
   password: string;
+  occupation: string;
 }

@@ -73,6 +73,23 @@
         *ngIf="!passwordInput.valid && passwordInput.touched"
         >Please enter your password.</ion-text
       >
+      <ng-container *ngIf="submissionType === 'join'">
+        <ion-item>
+          <ion-label position="floating">Occupation</ion-label>
+          <ion-input
+            #occupationInput="ngModel"
+            ngModel
+            type="text"
+            name="occupation"
+            required
+          ></ion-input>
+        </ion-item>
+        <!-- <ion-text
+          color="danger"
+          *ngIf="!occupation.valid && occupation.touched"
+          >Please enter your occupation.</ion-text
+        > -->
+      </ng-container>
       <p *ngIf="submissionType === 'join'" class="terms-and-conditions">
         By clicking Agree & Join, you agree to the Our
         <ion-text color="success">User Agreement</ion-text>,
