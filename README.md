@@ -32,7 +32,7 @@ In a second terminal:
 > $ ionic serve
 
 
-Made by:
+Made by:-
 
 Aayush Garg
 
